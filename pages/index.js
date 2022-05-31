@@ -11,25 +11,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.nav}>
-        <ul>
-          <li>Home</li>
-        </ul>
-        <ul>
-          <li>About</li>{" "}
-        </ul>
-        <ul>
-          <li>Blog</li>
-        </ul>
-        <ul>
-          <li>Contact us</li>
-        </ul>
-      </nav>
-
+      
       <main className={styles.main}>
         <h1>
           <a>Welcome to Abhishek's Blog post 🙏</a>
         </h1>
+        <div className={styles.imagewrap}>
+          <Image
+            className={styles.myimg}
+            src="/coder.avif"
+            width={237}
+            height={158}
+          />
+        </div>
 
         <p className={styles.description}>
           you can all types of javascripit interview problem solution
@@ -37,19 +31,19 @@ export default function Home() {
 
         <div>
           <h2>Popular Blog of JS</h2>
-          <div className="blogs">
+          <div className={styles.blogs}>
             <h3>difference between == and ===</h3>
             <p>
               == only comapre the value where === comapre value as well as type
             </p>
           </div>
-          <div className="blogs">
+          <div className={styles.blogs}>
             <h3>difference between == and ===</h3>
             <p>
               == only comapre the value where === comapre value as well as type
             </p>
           </div>
-          <div className="blogs">
+          <div className={styles.blogs}>
             <h3>difference between == and ===</h3>
             <p>
               == only comapre the value where === comapre value as well as type
